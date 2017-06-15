@@ -40,6 +40,8 @@
     mosq.ondisconnect = function (rc) {
         console.log('on desconect...');
         $('#log').html('Desconectado!');
+        $('#historico').hide();
+        $('#info').hide();
     };
 
     mosq.onmessage = function (topic, payload, qos) {
