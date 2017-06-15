@@ -2,8 +2,8 @@
 
     var mosq = new Mosquitto();
 
-    var recept = 'MQTTLeandroGabrielRecebe';
-    var envia = 'MQTTLeandroGabrielEnvia';
+    var recept = 'MQQTTesteRecebe';
+    var envia = 'MQQTTesteRecebe';
     var url = "wss://iot.eclipse.org:443/ws";
     var index = 0;
     var lastValue = null;
@@ -23,7 +23,7 @@
 
     $('#desliga-output').click(function () {
         var payload = "D";//valor a ser enviado
-
+        
         mosq.publish(envia, payload, 0);
     });
 
