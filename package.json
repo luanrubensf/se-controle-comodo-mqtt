@@ -1,0 +1,8 @@
+{
+  "name": "gas-microcontroladores",
+  "version": "0.0.1",
+  "devDependencies": {
+    "browser-sync": "^2.18.1",
+    "gulp": "^3.9.1"
+  }
+}

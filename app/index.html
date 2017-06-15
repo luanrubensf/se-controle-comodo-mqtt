@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gás</title>
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap.min.css" />
+</head>
+
+<body width="100%">
+    <div>
+        <table width="100%">
+            </tr>
+            <td bgcolor="#EEE5DE" width="30%">
+                <h1 style="color: #228B22; margin-left: 15px">Gás</h1>
+            </td>
+            <td bgcolor="#EEE5DE" width="70%">
+                <h1 style="color: #228B22; margin-left: 15px">Autores: Leandro Gabriel e Luan Figueredo</font>
+            </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row text-center">
+        <h2>Conectar</h2>
+        <div class="col-md-12">
+            Conectar-se ao servidor
+        </div>
+        <div class="col-md-12">
+            <button type="button" id="connect" class="btn btn-primary">Conectar</button>
+            <button type="button" id="disconnect" class="btn btn-danger">Desconectar</button>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12" id="log"></div>
+    </div>
+
+    <div id="info" class="row text-center" style="display:none" >
+        <h2>Informações</h2>
+        <div class="col-md-12" id="table">
+            <label for="">Peso atual: </label>
+            <span id="valorPeso"></span>
+        </div>
+    </div>
+
+    <div id="historico" class="row text-center" style="display:none;height: 300px; overflow: auto">
+        <h2>Histórico</h2>
+        <div class="col-md-10 col-md-offset-1" id="table">
+            <span id="valorPeso"></span>
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th width="10%">#</th>
+                        <th width="55%">Data/hora</th>
+                        <th width="35%">Peso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='../lib/mosquitto.js'></script>
+    <script type='text/javascript' src='../lib/jquery-3.1.1.min.js'></script>
+    <script type='text/javascript' src='src/app.js'></script>
+</body>
+
+</html>
