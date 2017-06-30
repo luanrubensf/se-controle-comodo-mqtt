@@ -19,14 +19,14 @@
         return disconnect();
     });
 
-    $('#light').click(function () {
+    $('#img-light').click(function () {
         changeLightImage();
         changeOcupado(1);
     });
 
     function setTimeoutVazao() {
         setInterval(function () {
-            var payload = "33";
+            var payload = Math.floor((Math.random() * 45) + 1);;
             mosq.publish(enviaVazao, payload, 0);
         }, 10000);
     }
@@ -119,7 +119,7 @@
     function connect() {
         console.log('conectando...');
         mosq.connect(url);
-        showPainel();
+        // showPainel();
     }
 
     function disconnect() {
