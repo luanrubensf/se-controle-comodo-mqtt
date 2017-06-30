@@ -10,7 +10,7 @@
 <body width="100%">
     <div class="row" style="background-color: #42a4f4">
         <div class="col-md-6">
-            <h1 style="color: #ffffff; margin-left: 15px">Banheiro do Hahn</h1>                
+            <h1 style="color: #ffffff; margin-left: 15px">Banheiro do Hahn</h1>
         </div>
     </div>
 
@@ -28,32 +28,35 @@
         <div class="col-md-12" id="log"></div>
     </div>
 
-    <div id="info" class="row text-center" style="display:none" >
+    <div id="info" class="row text-center" style="display:none">
         <h2>Informações</h2>
-        <div class="col-md-12" id="table">
-            <label for="">Peso atual: </label>
-            <span id="valorPeso"></span>
-        </div>
     </div>
 
-    <div id="historico" class="row text-center" style="display:none;height: 300px; overflow: auto">
-        <h2>Histórico</h2>
-        <div class="col-md-10 col-md-offset-1" id="table">
-            <span id="valorPeso"></span>
-            <table class="table" id="table">
-                <thead>
-                    <tr>
-                        <th width="10%">#</th>
-                        <th width="55%">Data/hora</th>
-                        <th width="35%">Peso</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <div id="historico" class="row text-center" style="display:none;height: 500px;">
+            <div class="col-md-4">
+                <h3>Vazão de água</h3>
+                Vazão atual: <span id="vazaoAtual"></span>
+                    <table id="tableVazao" class="table">
+                        <thead>
+                            <th width="55%">Data/hora</th>
+                            <th width="45%">Vazão</th>
+                        </thead>
+                        <tbody>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+            <div class="col-md-4">
+                <h3>Luminosidade</h3>
+                <button id="light">Clicar</button>
+                <img id="img-light" src="./img/light2.ico" alt="">
+            </div>
+            <div class="col-md-4">
+                <h3>Presença</h3>
+                <span id="ocupado">
+                    <h2>DISPONÍVEL</h2>
+                </span>
+            </div>
     </div>
 
     <script type='text/javascript' src='../lib/mosquitto.js'></script>
