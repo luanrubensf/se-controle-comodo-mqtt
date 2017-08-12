@@ -1,13 +1,12 @@
 # se-controle-comodo-mqtt
 
-Projeto para disciplina de sistemas embarcados. 
-Criado site para se comunicar com placa via MQTT.
+Project about the Embedded Systems subject.
+This site is able to communicate with a board that uses MQTT protocol, using Mosquitto.
 
-# Como usar:
+# How to use:
 
-- Efetuar o download ou clone do projeto
-- Navegar até a pasta do projeto
-- Na pasta do projeto executar: `npm install` 
-- Após o `npm install`, executar o comando `gulp serve`
+- Clone the project
+- On the project folder: `npm install` 
+- On the project folder: `gulp serve`
 
 
